@@ -1,4 +1,4 @@
-package com.example.demo.Food;
+package com.example.cardapio.Food;
 
 
 import jakarta.persistence.*;
@@ -24,4 +24,11 @@ public class Food {
      private String image;
 
      private Integer pride;
+
+  public Food(FoodRequestDTD data){
+      this.image = data.image();
+      this.pride = data.price();
+      this.title = data.title();
+  }
+
 }

@@ -1,4 +1,4 @@
-package com.example.demo.Food;
+package com.example.cardapio.Food;
 
 public record FoodResponseDTD(long id, String title, String image, Integer price) {
 
